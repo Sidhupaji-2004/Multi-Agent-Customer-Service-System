@@ -5,8 +5,9 @@ from .sub_agents.order_agent.agent import order_agent
 from .sub_agents.policy_agent.agent import policy_agent
 from .sub_agents.sales_agent.agent import sales_agent
 
+
 # Create the root customer service agent
-customer_service_agent = Agent(
+agent = Agent(
     name="customer_service",
     model="gemini-2.0-flash",
     description="Customer service agent for AI Developer Accelerator community",
